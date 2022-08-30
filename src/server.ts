@@ -1,15 +1,14 @@
-import { User } from '@dto/user'
-import express from 'express'
+import type {User} from '@dto/user';
+import express from 'express';
 
-const app = express()
+const app = express();
 
 app.get('/', (req, res) => {
-    
-    const user:User = {
-        name: "sergio"
-    }
+	const user: User = {
+		name: 'sergio',
+	};
 
-    return res.json(user)
-})
+	return res.json(user);
+});
 
-app.listen(3333)
+app.listen(3333);
